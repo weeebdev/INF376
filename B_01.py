@@ -18,4 +18,4 @@ for i in files:
 s = pd.Series(res)
 s.drop_duplicates(keep='first',inplace=True)
 filepath = './result/B_01.csv'
-s.to_csv(filepath,index=None)
+s.to_csv(filepath,index=False, header=False)
