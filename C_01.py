@@ -6,7 +6,7 @@ filename = './data/spamlord.zip'
 zip = zipfile.ZipFile(filename, 'r')
 files = zip.namelist()
 
-email = r'([\w\_\-\.]+@(?:\w{2,}\.)+\w{2,})'
+email = r'(?<!\\)([\w\_\-\.]+@(?:[a-z]{2,}\.)+[a-z]{2,4})\b'
 phone = r'((?:\d{3}\-){2}\d{4})'
 
 res = {'item': [], 'type': []}
