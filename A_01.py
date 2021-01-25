@@ -7,8 +7,8 @@ import re
 file_name = './data/State Grants 2020.xlsx' 
 df = pd.concat(pd.read_excel(file_name, sheet_name=[0,1,2,3,4]), ignore_index=True)[:-1]
 
-M = r'ұлы|улы|уғли|угли|вич|ов|ев[^\w]'
-F = r'қызы|кызы|қизи|кизи|вна|вна|ова|ева[^\w]'
+M = r'\w*((ұлы)|(улы)|(уғли)|(угли)|(вич)|(ов)|(ев))\b'
+F = r'\w*((қызы)|(кызы)|(қизи)|(кизи)|(вна)|(вна)|(ова)|(ева))\b'
 
 def identifyGender(FIO):
     FIO = FIO.lower()
