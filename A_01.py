@@ -20,7 +20,7 @@ def identifyGender(FIO):
 
 df['Gender'] = df.apply(lambda row: identifyGender(row.FIO), axis = 1)
 file_path = './result/A_01.csv'
-df.to_csv(file_path, columns=['FIO', 'Gender'])
+df.to_csv(file_path, columns=['FIO', 'Gender'], index=False)
 
 # bigender = df[df['Gender'] == '']
 # bigender.to_csv('bigender.csv')
