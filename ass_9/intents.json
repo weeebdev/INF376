@@ -1,0 +1,58 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hola",
+        "Hello"
+      ],
+      "responses": ["Hi", "Hello", "Welcome"],
+      "context": [""]
+    },
+    {
+      "tag": "time-course",
+      "patterns": [
+        "What is the time of |?",
+        "Time of |",
+        "When | starts?",
+        "At what time | starts?"
+      ],
+      "responses": ["It is |"],
+      "context": [""]
+    },
+    {
+      "tag": "course-instructor",
+      "patterns": [
+        "Who is the Instructor of the | course?",
+        "Who provides the | course?",
+        "Who is the Instructor of the |?",
+        "Who provides the |?"
+      ],
+      "responses": ["|"],
+      "context": [""]
+    },
+    {
+      "tag": "instructor-time",
+      "patterns": [
+        "When |'s lesson is provided?",
+        "When |'s lesson starts?",
+        "Time of |'s teacher lesson",
+        "Schedule of | instructor"
+      ],
+      "responses": ["|"],
+      "context": [""]
+    },
+    {
+      "tag": "time-course-info",
+      "patterns": [
+        "Are there lessons on |",
+        "When |'s lesson starts?",
+        "Time of |'s teacher lesson",
+        "Schedule of | instructor"
+      ],
+      "responses": ["|"],
+      "context": [""]
+    }
+  ]
+}
